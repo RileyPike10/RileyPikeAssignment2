@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me - Riley Pike</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Riley Pike</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="about-me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-me.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1 class="text-center">About Me</h1>
+      <p class="lead text-center">
+        Hello, I'm Riley Pike. I'm passionate about technology, mechanics, and
+        creativity.
+      </p>
+      <div class="mt-4 p-4 bg-white shadow rounded">
+        <h2>My Interests</h2>
+        <p>
+          I love working on cars, whether it’s repairing, modifying, or just
+          learning about their mechanics. Along with that comes the thrill of
+          riding motorcycles, it’s an incredible way to experience the open road
+          and makes life better.
+        </p>
+        <p>
+          I'm also interested in video games, both playing and creating them.
+          Game development allows me to combine creativity with problem-solving,
+          and I enjoy bringing my ideas to life and allow other to experience
+          what I create.
+        </p>
+        <p>
+          When I want to relax, I enjoy reading. Whether it's technical books,
+          sci-fi, or classic literature, reading helps me expand my knowledge
+          and imagination and is the best form of meditation in my opinion.
+        </p>
+        <p>I also really love music, some of my favorite songs are:</p>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=EA9TnsZl7Gk">Eurydice</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=u9Dg-g7t2l4"
+              >The Sound of Silence</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=M70Mh58_qXs"
+              >Orange Juice</a
+            >
+          </li>
+        </ul>
+        <p>
+          If I had to rank my hbobbies from favorite to least favorite I think
+          it would be:
+        </p>
+        <ol>
+          <li>Golf</li>
+          <li>Motorcycles</li>
+          <li>Reading</li>
+        </ol>
+        <section id="carousel" style="text-align: center; margin-top: 40px">
+          <h3>My Interests and Experiences</h3>
+
+          <div
+            style="
+              position: relative;
+              width: 80%;
+              margin: auto;
+              overflow: hidden;
+            "
+          >
+            <div
+              id="carouselImages"
+              style="display: flex; transition: transform 0.5s ease-in-out"
+            >
+              <div
+                style="
+                  min-width: 100%;
+                  box-sizing: border-box;
+                  text-align: center;
+                "
+              >
+                <img
+                  src="Pictures/image1.jpg"
+                  alt="Motorcycle"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                />
+                <p>Motorcycle</p>
+              </div>
+              <div
+                style="
+                  min-width: 100%;
+                  box-sizing: border-box;
+                  text-align: center;
+                "
+              >
+                <img
+                  src="Pictures/image2.jpg"
+                  alt="Video Games"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                />
+                <p>Video Games</p>
+              </div>
+              <div
+                style="
+                  min-width: 100%;
+                  box-sizing: border-box;
+                  text-align: center;
+                "
+              >
+                <img
+                  src="Pictures/image3.jpg"
+                  alt="Golf"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                />
+                <p>Golf</p>
+              </div>
+              <div
+                style="
+                  min-width: 100%;
+                  box-sizing: border-box;
+                  text-align: center;
+                "
+              >
+                <img
+                  src="Pictures/image4.jpg"
+                  alt="Coding"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                  "
+                />
+                <p>Coding</p>
+              </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <button
+              onclick="moveSlide(-1)"
+              style="
+                position: absolute;
+                top: 50%;
+                left: 250px;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 1;
+                font-size: 18px;
+                border-radius: 50%;
+              "
+            >
+              &#10094;
+            </button>
+            <button
+              onclick="moveSlide(1)"
+              style="
+                position: absolute;
+                top: 50%;
+                right: 250px;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 15px;
+                cursor: pointer;
+                z-index: 1;
+                font-size: 18px;
+                border-radius: 50%;
+              "
+            >
+              &#10095;
+            </button>
+          </div>
+        </section>
+
+        <script>
+          let index = 0;
+
+          function moveSlide(step) {
+            const slides = document.querySelectorAll("#carouselImages > div");
+            const totalSlides = slides.length;
+
+            index = (index + step + totalSlides) % totalSlides;
+
+            // Move the carousel
+            document.getElementById(
+              "carouselImages"
+            ).style.transform = `translateX(-${index * 100}%)`;
+          }
+        </script>
+      </div>
+    </div>
+    <div class="container">
+      <div class="schedule-container">
+        <h3 class="text-center">Weekly Schedule</h3>
+        <div class="schedule-table">
+          <div class="schedule-header row">
+            <div class="time col-12 col-sm-3">Time</div>
+            <div class="day col-12 col-sm-2">Monday</div>
+            <div class="day col-12 col-sm-2">Tuesday</div>
+            <div class="day col-12 col-sm-2">Wednesday</div>
+            <div class="day col-12 col-sm-2">Thursday</div>
+            <div class="day col-12 col-sm-2">Friday</div>
+          </div>
+          <div class="schedule-row row">
+            <div class="time col-12 col-sm-3">10:00 AM - 12:00 PM</div>
+            <div class="day col-12 col-sm-2">Class</div>
+            <div class="day col-12 col-sm-2">Study</div>
+            <div class="day col-12 col-sm-2">Class</div>
+            <div class="day col-12 col-sm-2">Study</div>
+            <div class="day col-12 col-sm-2">Class</div>
+          </div>
+          <div class="schedule-row row">
+            <div class="time col-12 col-sm-3">12:00 PM - 4:00 PM</div>
+            <div class="day col-12 col-sm-2">Marvin</div>
+            <div class="day col-12 col-sm-2">Marvin</div>
+            <div class="day col-12 col-sm-2">Marvin</div>
+            <div class="day col-12 col-sm-2">Marvin</div>
+            <div class="day col-12 col-sm-2">Marvin</div>
+          </div>
+          <div class="schedule-row row">
+            <div class="time col-12 col-sm-3">5:00 PM - 9:00 PM</div>
+            <div class="day col-12 col-sm-2">Help Desk</div>
+            <div class="day col-12 col-sm-2">Help Desk</div>
+            <div class="day col-12 col-sm-2">Help Desk</div>
+            <div class="day col-12 col-sm-2">Help Desk</div>
+            <div class="day col-12 col-sm-2">Help Desk</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

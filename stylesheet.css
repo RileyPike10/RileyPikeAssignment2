@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+/* About Me Section */
+#about {
+  margin-bottom: 50px;
+}
+
+#about h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#about p {
+  font-size: 16px;
+  color: #34495e;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Contact Me Section */
+#contact {
+  margin-bottom: 50px;
+}
+
+#contact h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+#contact li a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+#contact li a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio Section */
+#portfolio {
+  margin-bottom: 50px;
+}
+
+#portfolio h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portfolio-item {
+  display: inline-block;
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  text-align: center;
+  font-size: 18px;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  #about p,
+  #contact li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  #about p,
+  #contact li {
+    font-size: 12px;
+  }
+}
+
+/* Weekly Schedule Container */
+.schedule-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.schedule-container h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling the schedule table */
+.schedule-table {
+  width: 100%;
+  margin: 20px 0;
+}
+.schedule-header,
+.schedule-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule-header .time,
+.schedule-row .time {
+  flex: 1 1 100%;
+}
+.schedule-header .day,
+.schedule-row .day {
+  flex: 1 1 16.66%;
+  padding: 10px;
+  text-align: center;
+}
+.schedule-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+.schedule-row {
+  border-top: 1px solid #ddd;
+}
